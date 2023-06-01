@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nomempresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:gravity="center|top"
+        android:text="Logics Transporte"
+        android:textColor="#1D3733"
+        android:textSize="48sp"
+        android:textStyle="bold|italic" />
+
+
+    <EditText
+        android:id="@+id/tempDesejado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_text"
+        android:drawableLeft="@drawable/tempo"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Tempo desejado"
+        android:inputType="time"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/autonomia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_text"
+        android:drawableLeft="@drawable/autonomia"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Autonomia"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/combustível"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/background_text"
+        android:drawableLeft="@drawable/dinheiro"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Combustível"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/BTCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroun_botao"
+        android:onClick="realizarCalculo"
+        android:text="Calcular"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#1D3733"
+        android:textColorHint="#1D3733"
+        android:textColorLink="#1D3733"
+        android:textSize="34sp"
+        app:backgroundTint="#203E39" />
+
+</LinearLayout>
