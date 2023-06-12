@@ -9,9 +9,8 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tituloLocalizacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -24,28 +23,62 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textViewATUAL"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Atual:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textViewDESTINO"
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Atual:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/localAtual"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Destino:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Destino:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/localDestino"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"/>
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tituloDistancia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -57,38 +90,92 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView8"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Total:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView9"
+        <TextView
+            android:id="@+id/tV_DistTotal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Total:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/DistTotal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Percorrida:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView10"
+        <TextView
+            android:id="@+id/tV_DistPercorrida"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Percorrida:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/DistPercorrida"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Restante:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tV_DistRestante"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Restante:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/DistRestante"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+    </LinearLayout>
+
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tituloTempo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -100,28 +187,61 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView13"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Desejado:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView12"
+        <TextView
+            android:id="@+id/tV_tempDesejado"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Desejado:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/tempoDesejado"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Decorrido:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Decorrido:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <Chronometer
+            android:id="@+id/cronometro"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tituloOtimizacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -133,48 +253,112 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView11"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Consumo:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Custo:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Consumo:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"/>
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Velocidade recomendada:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/consumo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView16"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:text="Velocidade média:"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Custo:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/custo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Velocidade recomendada:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/VelRecomendada"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:text="Velocidade média:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/velMedia"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"
+            android:textColor="@color/black"/>
+    </LinearLayout>
 
     <Button
-        android:id="@+id/BTCalcular"
+        android:id="@+id/BTFinalizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/backgroun_botao"
